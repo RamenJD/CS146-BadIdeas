@@ -1,0 +1,285 @@
+body{
+	background: Black;
+}
+
+header{
+	padding:0px;
+	margin:10px;
+	background:#008080;
+}
+
+.logo {
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+  
+  float:left;
+}
+
+h1{
+  color: #66FCF1;
+	font-size:40px;
+	font-style:bold;
+	margin:0px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+
+h2{
+  color: White;
+	font-size:20px;
+	margin:0px;
+	padding-bottom:10px;
+	padding-left:15px;
+}
+
+/*.icon{
+	display:flex;
+	height:30px;
+	width:30px;
+	align-items:flex-start;
+}*/
+
+#Featured{
+	color:white;
+	text-align:center;
+	font-size:70px;
+	margin:0;
+}
+
+.container{
+	padding-top:30px;
+}
+
+.content{
+	padding-bottom:25px;
+  display:flex;
+	justify-content:center;
+}
+
+.post{
+	background:#262626;
+	width:100%;
+	height:100%;
+	min-width:600px;
+	min-height:300px;
+	margin-left:400px;
+	margin-right:400px;
+	padding:10px;
+	padding-bottom:50px;
+	display:flex;
+	justify-content:center;
+	flex-grow:auto;
+}
+
+.meme{
+	max-height:800px;
+	max-width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h3{
+  color: #66FCF1;
+	font-size:20px;
+  word-wrap: normal;
+}
+
+p {
+  color: #bababa;
+  word-wrap: break-word;
+}
+
+.onClick {border-radius: 12px;}
+
+.button{
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.link:hover {color:blue;}
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.post-field{
+	background:white;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	margin:0;
+	display:flex;
+	justify-content:space-between;
+}
+
+.navbar {
+    background-color: Black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: #66FCF1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*CSS for contact page*/
+.contactMessage{
+	padding-top:20px;
+	color:white;
+	display:flex;
+	justify-content:center;
+}
+form{
+	color:white;
+}
+input[type=text]{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	display:flex;
+	flex-grow:auto;
+}
+input[type=text]:focus{
+   border: 3px solid #555; 
+}
+#contactQuestion{
+	display:flex;
+	flex-grow:auto;
+	width:100%;
+}
+.message{
+	height:300px;
+	width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	display:flex;
+	flex-grow:auto;
+}
+.message:focus{
+   border: 3px solid #555; 
+}
+.secretImg{
+	bottom:0;
+	opacity:0;
+	display:flex;
+	height:300px;
+	width:350px;
+}
+.secretImg:hover{
+	-webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.rules{
+  color:white;
+}
+
+
+/*Media Queries for desktop:*/
+@media only screen and (min-width: 999px) {
+    .container {
+        flex-direction: column;
+        align-items: center;    
+    }
+  
+    .post {
+        max-width: 800px;
+        display: flex;
+    } 
+}
+
+/*Media Queries for tablet:*/
+@media only screen and (max-width: 998px) and (min-width: 400px) {
+  header {
+      justify-content: center;
+  }
+  
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  .content {
+      flex: 50%;
+  }
+  
+  .post {
+      flex: 50%;
+  }
+  
+  .meme {
+      width: 100%;
+      height:auto;
+  }
+}
+
+
+/*Media Queries for phone:*/
+@media only screen and (max-width: 399px) {
+header {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .logo {
+      border-radius: 50%;    
+  }
+  
+  .container {
+      flex-basis: auto;
+  }
+  
+  .content {
+      flex-direction: column;
+  }
+  
+  .meme {
+      width: 100%;
+      height: auto;
+  }
+}
+
+.rules{
+  display:flex;
+  justify-content: center;
+  color:white;
+}
