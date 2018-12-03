@@ -22,9 +22,9 @@ function handleFormSubmit(event) {
 
 function validateForm() {
     var x = document.getElementById("message").value;
-	console.log(x)
-    if (x == "") {
-        alert("Message must be filled out");
+	 var y = document.getElementById("email").value;
+	if (x == "" || y == "") {
+        alert("Fields must be filled out");
         return false;
     }
 	return true;
@@ -38,7 +38,7 @@ function remove(form_id) {
 function addNewContent(imgLocation) {
 	var newMessage = document.getElementById("contactMessage");
 	newMessage.innerHTML = "";
-	newMessage.innerHTML += "Thank you for your response! Our highly-intelligent deep learning algorithm has determined the most appropriate gift for you: ";
+	newMessage.innerHTML += "Thank you for your message, we will recieve it shortly! Our highly-intelligent deep learning algorithm has picked a specialized gift for you: ";
 
 	var Image = document.createElement("img");
     Image.src = imgLocation;
