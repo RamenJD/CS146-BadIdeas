@@ -1,3 +1,4 @@
+//Paul Gurman
 const fileLocations = {
 	1: './images/pterodactyl.jpg',
 	2: './images/trex.jpg',
