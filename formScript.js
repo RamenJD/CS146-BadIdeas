@@ -47,6 +47,5 @@ function addNewContent(imgLocation) {
 	document.getElementById("content").appendChild(Image);
 }
 window.onload = () => {
-   // Once our window is loaded, we add the event listener for our post form
    document.getElementById("contactForm").addEventListener('submit', handleFormSubmit);
 };
