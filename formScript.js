@@ -1,4 +1,5 @@
-//Paul Gurman
+//Contributed by: Paul Gurman
+//Group members: Lord Gerald Marapao, Ishaan Patel, Jie Dai, Dylan Regan
 const fileLocations = {
 	1: './images/pterodactyl.jpg',
 	2: './images/trex.jpg',
