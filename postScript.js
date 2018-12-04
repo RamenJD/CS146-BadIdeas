@@ -1,4 +1,5 @@
-//Paul Gurman
+//Contributed by: Paul Gurman
+//Group members: Lord Gerald Marapao, Ishaan Patel, Jie Dai, Dylan Regan
 function handleFormSubmit(event) {
    event.preventDefault();
 
@@ -31,6 +32,5 @@ function addNewContent(imgLocation) {
 }
 
 window.onload = () => {
-   // Once our window is loaded, we add the event listener for our post form
    document.getElementById("Post").addEventListener('click', handleFormSubmit);
 };
